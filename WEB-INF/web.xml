@@ -1,0 +1,450 @@
+<web-app>
+	<welcome-file-list>
+		<welcome-file>/Home.jsp</welcome-file>
+	</welcome-file-list>
+	
+	<servlet>
+    		<servlet-name>Buffer</servlet-name>
+    		<servlet-class>Buffer</servlet-class>
+	</servlet>
+	<servlet-mapping>
+    		<servlet-name>Buffer</servlet-name>
+    		<url-pattern>/buffer</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+    		<servlet-name>ReqData</servlet-name>
+    		<servlet-class>Doctor.ReqData</servlet-class>
+	</servlet>
+	<servlet-mapping>
+    		<servlet-name>ReqData</servlet-name>
+    		<url-pattern>/reqdata</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+    		<servlet-name>APIcallback</servlet-name>
+    		<servlet-class>APIcallback</servlet-class>
+	</servlet>
+	<servlet-mapping>
+    		<servlet-name>APIcallback</servlet-name>
+    		<url-pattern>/api-callback</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+    		<servlet-name>DuoCallback</servlet-name>
+    		<servlet-class>Duo.DuoCallback</servlet-class>
+	</servlet>
+	<servlet-mapping>
+    		<servlet-name>DuoCallback</servlet-name>
+    		<url-pattern>/duo-callback</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+    		<servlet-name>LoadData</servlet-name>
+    		<servlet-class>Doctor.LoadData</servlet-class>
+	</servlet>
+	<servlet-mapping>
+    		<servlet-name>LoadData</servlet-name>
+    		<url-pattern>/load</url-pattern>
+			<url-pattern>/Doctor/load</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+    		<servlet-name>SAMLAuth</servlet-name>
+    		<servlet-class>SAMLAuth</servlet-class>
+	</servlet>
+	<servlet-mapping>
+    		<servlet-name>SAMLAuth</servlet-name>
+    		<url-pattern>/SAMLAuth</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+    		<servlet-name>BufferDoc</servlet-name>
+    		<servlet-class>BufferDoc</servlet-class>
+	</servlet>
+	<servlet-mapping>
+    		<servlet-name>BufferDoc</servlet-name>
+    		<url-pattern>/buffer2</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+    		<servlet-name>Auth</servlet-name>
+    		<servlet-class>Auth</servlet-class>
+	</servlet>
+	<servlet-mapping>
+    		<servlet-name>Auth</servlet-name>
+    		<url-pattern>/auth</url-pattern>
+		<url-pattern>/Admin/details</url-pattern>
+		<url-pattern>/Doctor/details</url-pattern>
+		<url-pattern>/Patient/details</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+    		<servlet-name>AddUserPassword</servlet-name>
+    		<servlet-class>AddUserPassword</servlet-class>
+	</servlet>
+	<servlet-mapping>
+    		<servlet-name>AddUserPassword</servlet-name>
+    		<url-pattern>/adduserpassword</url-pattern>
+			<url-pattern>/Doctor/adduserpassword</url-pattern>
+			<url-pattern>/Admin/adduserpassword</url-pattern>
+			<url-pattern>/Patient/adduserpassword</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+    		<servlet-name>ChangePassword</servlet-name>
+    		<servlet-class>ChangePassword</servlet-class>
+	</servlet>
+	<servlet-mapping>
+    		<servlet-name>ChangePassword</servlet-name>
+    		<url-pattern>/changepassword</url-pattern>
+			<url-pattern>/Admin/changepassword</url-pattern>
+			<url-pattern>/Doctor/changepassword</url-pattern>
+			<url-pattern>/Patient/changepassword</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+    		<servlet-name>Login</servlet-name>
+    		<servlet-class>Login</servlet-class>
+	</servlet>
+	<servlet-mapping>
+    		<servlet-name>Login</servlet-name>
+			<url-pattern>/login</url-pattern>
+			<url-pattern>/Admin/login</url-pattern>
+			<url-pattern>/Doctor/login</url-pattern>
+			<url-pattern>/Patient/login</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+    		<servlet-name>UsernameLogin</servlet-name>
+    		<servlet-class>UsernameLogin</servlet-class>
+	</servlet>
+	<servlet-mapping>
+    		<servlet-name>UsernameLogin</servlet-name>
+   		<url-pattern>/userlogin</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+    		<servlet-name>Registration</servlet-name>
+    		<servlet-class>Registration</servlet-class>
+	</servlet>
+	<servlet-mapping>
+   		<servlet-name>Registration</servlet-name>
+    		<url-pattern>/registration</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+    		<servlet-name>RequestTrigger</servlet-name>
+    		<servlet-class>RequestTrigger</servlet-class>
+	</servlet>
+	<servlet-mapping>
+   		<servlet-name>RequestTrigger</servlet-name>
+    		<url-pattern>/reqtrig</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+    		<servlet-name>SSOcallback</servlet-name>
+    		<servlet-class>SSOcallback</servlet-class>
+	</servlet>
+	<servlet-mapping>
+   		<servlet-name>SSOcallback</servlet-name>
+    		<url-pattern>/SSOcallback</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+    		<servlet-name>Saml</servlet-name>
+    		<servlet-class>Saml</servlet-class>
+	</servlet>
+	<servlet-mapping>
+   		<servlet-name>Saml</servlet-name>
+    		<url-pattern>/saml</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+    		<servlet-name>RemoveDevice</servlet-name>
+    		<servlet-class>RemoveDevice</servlet-class>
+	</servlet>
+	<servlet-mapping>
+   		<servlet-name>RemoveDevice</servlet-name>
+    		<url-pattern>/removedevice</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+    		<servlet-name>UserData</servlet-name>
+    		<servlet-class>UserData</servlet-class>
+	</servlet>
+	<servlet-mapping>
+   		<servlet-name>UserData</servlet-name>
+    		<url-pattern>/userdata</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+    		<servlet-name>AddIP</servlet-name>
+    		<servlet-class>AddIP</servlet-class>
+	</servlet>
+	<servlet-mapping>
+   		<servlet-name>AddIP</servlet-name>
+    		<url-pattern>/addip</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+    		<servlet-name>Verify</servlet-name>
+    		<servlet-class>Verify</servlet-class>
+	</servlet>
+	<servlet-mapping>
+   		<servlet-name>Verify</servlet-name>
+    		<url-pattern>/verify</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+    		<servlet-name>Authorize</servlet-name>
+    		<servlet-class>Authorize</servlet-class>
+	</servlet>
+	<servlet-mapping>
+   		<servlet-name>Authorize</servlet-name>
+    		<url-pattern>/authorize</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+    		<servlet-name>LoadReq</servlet-name>
+    		<servlet-class>LoadReq</servlet-class>
+	</servlet>
+	<servlet-mapping>
+   		<servlet-name>LoadReq</servlet-name>
+    		<url-pattern>/LoadReq</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+    		<servlet-name>Req</servlet-name>
+    		<servlet-class>Patient.Req</servlet-class>
+	</servlet>
+	<servlet-mapping>
+   		<servlet-name>Req</servlet-name>
+    		<url-pattern>/request</url-pattern>
+			<url-pattern>/Patient/request</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+    		<servlet-name>Approve</servlet-name>
+    		<servlet-class>Doctor.Approve</servlet-class>
+	</servlet>
+	<servlet-mapping>
+   		<servlet-name>Approve</servlet-name>
+    		<url-pattern>/Doctor/rqt</url-pattern>
+			<url-pattern>/rqt</url-pattern>
+	</servlet-mapping>
+	
+				<!-- Admin-->
+				
+	<servlet>
+    		<servlet-name>AddDoc</servlet-name>
+    		<servlet-class>Admin.AddDoc</servlet-class>
+	</servlet>
+	<servlet-mapping>
+   		<servlet-name>AddDoc</servlet-name>
+    		<url-pattern>/adddoctor</url-pattern>
+			<url-pattern>/Admin/adddoctor</url-pattern>
+	</servlet-mapping>
+		
+	<servlet>
+    		<servlet-name>AddAdmin</servlet-name>
+    		<servlet-class>Admin.AddAdmin</servlet-class>
+	</servlet>
+	<servlet-mapping>
+   		<servlet-name>AddAdmin</servlet-name>
+    		<url-pattern>/addadmin</url-pattern>
+			<url-pattern>/Admin/addadmin</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+    		<servlet-name>VerifyAdmin</servlet-name>
+    		<servlet-class>Admin.VerifyAdmin</servlet-class>
+	</servlet>
+	<servlet-mapping>
+   		<servlet-name>VerifyAdmin</servlet-name>
+    		<url-pattern>/verifyadmin</url-pattern>
+	</servlet-mapping>
+	
+				<!-- Admin-->
+	
+	<servlet>
+    		<servlet-name>Load</servlet-name>
+    		<servlet-class>Patient.Load</servlet-class>
+	</servlet>
+	<servlet-mapping>
+   		<servlet-name>Load</servlet-name>
+    		<url-pattern>/loadpat</url-pattern>
+			<url-pattern>/Patient/loadpat</url-pattern>
+	</servlet-mapping>
+		
+	<servlet>
+    		<servlet-name>AdminData</servlet-name>
+    		<servlet-class>dbdata.AdminData</servlet-class>
+	</servlet>
+	<servlet-mapping>
+   		<servlet-name>AdminData</servlet-name>
+    	<url-pattern>/admindata</url-pattern>
+		<url-pattern>/Admin/admindata</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+    	<servlet-name>getData</servlet-name>
+    	<servlet-class>dbdata.getData</servlet-class>
+	</servlet>
+	<servlet-mapping>
+   		<servlet-name>getData</servlet-name>
+    	<url-pattern>/getdata</url-pattern>
+		<url-pattern>/Patient/getdata</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+    	<servlet-name>DocData</servlet-name>
+    	<servlet-class>dbdata.DocData</servlet-class>
+	</servlet>
+	<servlet-mapping>
+   		<servlet-name>DocData</servlet-name>
+    	<url-pattern>/doctordata</url-pattern>
+		<url-pattern>/Doctor/doctordata</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+    	<servlet-name>GeneralData</servlet-name>
+    	<servlet-class>dbdata.GeneralData</servlet-class>
+	</servlet>
+	<servlet-mapping>
+   		<servlet-name>GeneralData</servlet-name>
+    	<url-pattern>/gendata</url-pattern>
+		<url-pattern>/Admin/gendata</url-pattern>
+		<url-pattern>/Doctor/gendata</url-pattern>
+		<url-pattern>/Patient/gendata</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+    	<servlet-name>SSOAuth</servlet-name>
+    	<servlet-class>SSOAuth</servlet-class>
+	</servlet>
+	<servlet-mapping>
+   		<servlet-name>SSOAuth</servlet-name>
+    	<url-pattern>/SSOauth</url-pattern>
+	</servlet-mapping>
+	
+	<filter>
+		<filter-name>PatientFilter</filter-name>
+		<filter-class>Filters.PatientFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>PatientFilter</filter-name>
+		<url-pattern>/PatientDetails.jsp</url-pattern>
+	</filter-mapping>
+	
+	<filter>
+		<filter-name>DoctorFilter</filter-name>
+		<filter-class>Filters.DoctorFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>DoctorFilter</filter-name>
+		<url-pattern>/Doctor.jsp</url-pattern>
+	</filter-mapping>
+	
+	<filter>
+		<filter-name>AdminFilter</filter-name>
+		<filter-class>Filters.AdminFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>AdminFilter</filter-name>
+		<url-pattern>/Admin.jsp</url-pattern>
+		<url-pattern>/AddAdmin.jsp</url-pattern>
+		<url-pattern>/AddDoc.jsp</url-pattern>
+	</filter-mapping>
+	
+	<filter>
+		<filter-name>GeneralFilter</filter-name>
+		<filter-class>Filters.GeneralFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>GeneralFilter</filter-name>
+		<url-pattern>/UserPassword.jsp</url-pattern>
+	</filter-mapping>
+	
+	<filter>
+		<filter-name>OtpFilter</filter-name>
+		<filter-class>Filters.OtpFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>OtpFilter</filter-name>
+		<url-pattern>/Password.jsp</url-pattern>
+		<url-pattern>/OTP.jsp</url-pattern>
+	</filter-mapping>
+
+
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>Admin</web-resource-name>
+			<url-pattern>/Admin/*</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>Admin</role-name>
+		</auth-constraint>
+	</security-constraint>
+
+	<security-role>
+		<role-name>Admin</role-name>
+	</security-role>
+
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>Patient</web-resource-name>
+			<url-pattern>/Patient/*</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>Patient</role-name>
+		</auth-constraint>
+	</security-constraint>
+
+	<security-role>
+		<role-name>Patient</role-name>
+	</security-role>
+
+
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>Doctor</web-resource-name>
+			<url-pattern>/Doctor/*</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>Doctor</role-name>
+		</auth-constraint>
+	</security-constraint>
+
+	<security-role>
+		<role-name>Doctor</role-name>
+	</security-role>
+
+
+	<login-config>
+		<auth-method>FORM</auth-method>
+		<form-login-config>
+			<form-login-page>/Dummy.jsp</form-login-page>
+			<form-error-page>/Home.jsp</form-error-page>
+		</form-login-config>
+	</login-config>
+	
+	<!--
+	<filter>
+		<filter-name>CorsFilter</filter-name>
+		<filter-class>org.apache.catalina.filters.CorsFilter</filter-class>
+		<init-param>
+			<param-name>cors.allowed.origins</param-name>
+			<param-value>*</param-value>
+		</init-param>
+		<init-param>
+			<param-name>cors.allowed.methods</param-name>
+			<param-value>GET,POST,HEAD,OPTIONS,PUT</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>CorsFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>-->
+
+</web-app>
